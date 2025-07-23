@@ -4,7 +4,7 @@ import Wrapper from "@/layouts/Wrapper";
  
  
 export const metadata = {
-  title: "404 error || Diego React Next js Template",
+  title: "404 error || Asified By AK",
 };
 const index = () => {
   return (

@@ -27,9 +27,9 @@ const hero_content: DataType = {
     "Visual designer",
   ],
   sub_title: "Hello There!",
-  title_1: "I am diego",
-  words: ["Web", "App", "UX"],
-  title_2: "designer",
+  title_1: "I am Asif Khan",
+  words: ["Web", "WP", "UX"],
+  title_2: "Developer",
   sm_info: <>The combination of my passion for design, code & <br /> interaction web design world.</>,
   btn_text: <>Get <br /> In Touch</>,
 

@@ -5,7 +5,7 @@ import Wrapper from '@/layouts/Wrapper';
 import React from 'react';
 
 export const metadata = {
-  title: "Service - Personal Creative Portfolio & Resume Next js Template",
+  title: "Service - Asified By AK",
 };
 
 const index = () => {

@@ -4,7 +4,7 @@ import React from 'react';
 
 
 export const metadata = {
-  title: "Diego - Personal Creative Portfolio & Resume Next js Template",
+  title: "Asified By AK",
 };
 
 const MainHome = () => {
