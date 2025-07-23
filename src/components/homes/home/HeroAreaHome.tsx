@@ -23,12 +23,12 @@ interface DataType {
 
 const hero_content: DataType = {
   slide_text: [
-    "Visual designer",
-    "Visual designer",
+    "Web designer",
+    "Web developer",
   ],
   sub_title: "Hello There!",
   title_1: "I am Asif Khan",
-  words: ["Web", "WP", "UX"],
+  words: ["Web", "WP", "CMS"],
   title_2: "Developer",
   sm_info: <>The combination of my passion for design, code & <br /> interaction web design world.</>,
   btn_text: <>Get <br /> In Touch</>,
@@ -138,7 +138,7 @@ const HeroAreaHome = () => {
                   <span className="tp-hero-thumb-shape-3"></span>
                 </div>
                 <div className="tp-hero-thumb">
-                  <Image src={HeroImage} style={{ height: 'auto' }} alt="diego-image" />
+                  <Image src={HeroImage} style={{ height: 'auto' }} alt="Wordpress developer-image" />
                 </div>
               </div>
             </div>

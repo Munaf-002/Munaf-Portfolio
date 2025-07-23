@@ -23,7 +23,7 @@ const about_content: DataType = {
   subtitle: "About Me",
   award_title: "Independent Of The Year",
   award_des: "Annual Awards 2020 • awwwards.com",
-  about_des: <>Hello! I'm <span>Diego</span> a self-taught & award-winning <span>Digital Designer & Developer</span> with over <span>fifteen  years of work experience</span>. I started in my children's room and got pro at renowned digital<span> nexum AG</span> agencies.</>,
+  about_des: <>Hello! I'm <span>Asif Khan</span> a self-taught <span>Digital Designer & Developer</span> with over <span>four  years of work experience</span>. What started in my room turned into a journey of crafting responsive, fast, and user-focused websites — from Figma files to live projects. <span> I focus on real results, </span> not just pretty layouts.</>,
   counter_data: [
     {
       id: 1,
