@@ -18,7 +18,7 @@ const portfolio_content = {
       id: 2,
       img: portfolio_img_2,
       bg_img: "/assets/img/portfolio/modalinex.png",
-      title: 'Modalinex',
+      title: 'Afilcorp',
       url: 'https://modalinex.com', // <-- external link
     },
     
@@ -27,7 +27,7 @@ const portfolio_content = {
       id: 3,
       img: portfolio_img_3,
       bg_img: "/assets/img/portfolio/afilcorp.png",
-      title: "Afilcorp",
+      title: "Christopher Leigh Dodson",
     }
   ]
 }
@@ -64,14 +64,14 @@ const PortfolioAreaHomeOne = () => {
                         </div>
                       </div>
                       <div className="tp-portfolio-content">
-                        <h3 className="tp-portfolio-title">Christopher Leigh</h3>
+                        <h3 className="tp-portfolio-title">Modalinex</h3>
                         <div className="tp-portfolio-meta d-flex align-items-center">
                           <span className="tp-portfolio-meta-count">01</span>
                           <span className="tp-portfolio-meta-arrow">
                             <RitghtArrowIconPortfolio />
                           </span>
                           <div className="tp-portfolio-meta-hover">
-                            <span>Branding</span>
+                            <span>Web Dev</span>
                             <span className="tp-portfolio-meta-link">View Project</span>
                           </div>
                         </div>
@@ -114,7 +114,7 @@ const PortfolioAreaHomeOne = () => {
                             <RitghtArrowIconPortfolio />
                           </span>
                           <div className="tp-portfolio-meta-hover">
-                            <span>Branding</span>
+                            <span>Web Dev</span>
                             <span className="tp-portfolio-meta-link">View Project</span>
                           </div>
                         </div>
