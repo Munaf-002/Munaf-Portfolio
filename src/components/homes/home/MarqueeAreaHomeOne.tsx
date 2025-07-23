@@ -7,12 +7,12 @@ import smile from '@/assets/img/marquee/smile.svg';
 import stroke from '@/assets/img/marquee/stroke.svg';
 
 const marquee_data = [
-  { text: 'Selected Work (2023)', img: smile },
-  { text: 'Diego Template', img: stroke },
-  { text: 'Selected Work (2023)', img: smile },
-  { text: 'Diego Template', img: stroke },
-  { text: 'Selected Work (2023)', img: smile },
-  { text: 'Diego Template', img: stroke },
+  { text: 'Web Design', img: smile },
+  { text: 'Asified', img: stroke },
+  { text: 'Web Developer', img: smile },
+  { text: 'Nextsites by AK', img: stroke },
+  { text: 'Wordpress', img: smile },
+  { text: 'CMS Dev', img: stroke },
 ]
 
 const setting = {

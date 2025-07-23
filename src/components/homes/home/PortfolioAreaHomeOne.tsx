@@ -3,9 +3,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import React from 'react';
 
-import portfolio_img_1 from "@/assets/img/portfolio/portfolio-2.jpg";
-import portfolio_img_2 from "@/assets/img/portfolio/portfolio-3.jpg";
-import portfolio_img_3 from "@/assets/img/portfolio/portfolio-1.jpg";
+import portfolio_img_1 from "@/assets/img/portfolio/modalinex.png";
+import portfolio_img_2 from "@/assets/img/portfolio/afilcorp.png";
+import portfolio_img_3 from "@/assets/img/portfolio/christopher.png";
 
 import UpArrowIconPortfolio from '@/svg/home/PortfolioIcons/UpArrowIconPortfolio';
 import RitghtArrowIconPortfolio from '@/svg/home/PortfolioIcons/RitghtArrowIconPortfolio';
@@ -17,14 +17,17 @@ const portfolio_content = {
     {
       id: 2,
       img: portfolio_img_2,
-      bg_img: "/assets/img/portfolio/portfolio-3.jpg",
-      title: 'Space Needle',
+      bg_img: "/assets/img/portfolio/modalinex.png",
+      title: 'Modalinex',
+      url: 'https://modalinex.com', // <-- external link
+    },
+    {
     },
     {
       id: 3,
       img: portfolio_img_3,
-      bg_img: "/assets/img/portfolio/portfolio-1.jpg",
-      title: "Crisis Cleanup",
+      bg_img: "/assets/img/portfolio/afilcorp.png",
+      title: "Afilcorp",
     }
   ]
 }
@@ -55,13 +58,13 @@ const PortfolioAreaHomeOne = () => {
                     <Link href="/portfolio-details">
                       <div className="tp-portfolio-thumb img-1 w-img fix ">
                         <div className="tp-portfolio-thumb-img include-bg d-none"
-                          style={{ backgroundImage: 'url(/assets/img/portfolio/portfolio-2.jpg)' }}></div>
+                          style={{ backgroundImage: 'url(/assets/img/portfolio/christopher.png)' }}></div>
                         <div className="tp-portfolio-thumb-img ">
                           <Image data-speed="0.85" style={{ objectFit: 'cover', height: "auto" }} src={portfolio_img_1} alt="image-here" />
                         </div>
                       </div>
                       <div className="tp-portfolio-content">
-                        <h3 className="tp-portfolio-title">Brand Identity </h3>
+                        <h3 className="tp-portfolio-title">Christopher Leigh</h3>
                         <div className="tp-portfolio-meta d-flex align-items-center">
                           <span className="tp-portfolio-meta-count">01</span>
                           <span className="tp-portfolio-meta-arrow">

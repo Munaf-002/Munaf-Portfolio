@@ -33,8 +33,8 @@ interface DataType {
 const personal_content: DataType = {
   subtitle: 'Personal Info',
   title: 'Perceived end knowledge certainly day sweetness why cordially.',
-  email: "example@gmail.com",
-  phone: "+491 234 5678",
+  email: "itsasif009@gmail.com",
+  phone: "+923132685490",
   skillsets_data: [
     {
       id: 1,

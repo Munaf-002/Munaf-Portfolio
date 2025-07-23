@@ -27,12 +27,12 @@ const about_content: DataType = {
   counter_data: [
     {
       id: 1,
-      count: 180,
+      count: 380,
       text: "Project Delivered",
     },
     {
       id: 2,
-      count: 13,
+      count: 4,
       text: "Years of Experience",
     },
     {
@@ -63,14 +63,14 @@ const AboutAreaHomeOne = () => {
                     <div className="tp-about-thumb p-relative z-index-1">
                       <div className="tp-about-thumb-bg-shape include-bg"
                         style={{ backgroundImage: 'url(/assets/img/about/shape/about-shape-1.png)' }}></div>
-                      <Image src={about_img} alt="image" />
+                      <Image src={about_img} alt="image" height={420} />
                     </div>
                   </div>
                 </div>
               </div>
               <div className="col-xl-7 col-lg-7">
                 <div className="tp-about-desc">
-                  <div className="tp-about-award d-inline-block">
+                  {/* <div className="tp-about-award d-inline-block">
                     <div className="tp-about-award-icon d-inline-block" style={{ marginRight: "15px" }}>
                       <span>
                         <Image src={award_img} alt="image" />
@@ -79,7 +79,7 @@ const AboutAreaHomeOne = () => {
                     <div className="tp-about-award-content d-inline-block">
                       <h4 className="tp-about-award-title">{award_title}</h4>
                       <p>{award_des}</p>
-                    </div>
+                    </div> */}
                   </div>
                   <div className="tp-about-desc-content mb-40">
                     <p>{about_des}</p>
