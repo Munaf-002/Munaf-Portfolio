@@ -70,7 +70,7 @@ const AboutAreaHomeOne = () => {
               </div>
               <div className="col-xl-7 col-lg-7">
                 <div className="tp-about-desc">
-                  {/* <div className="tp-about-award d-inline-block">
+                  /* <div className="tp-about-award d-inline-block">
                     <div className="tp-about-award-icon d-inline-block" style={{ marginRight: "15px" }}>
                       <span>
                         <Image src={award_img} alt="image" />
@@ -79,7 +79,7 @@ const AboutAreaHomeOne = () => {
                     <div className="tp-about-award-content d-inline-block">
                       <h4 className="tp-about-award-title">{award_title}</h4>
                       <p>{award_des}</p>
-                    </div> */}
+                    </div> */
                   </div>
                   <div className="tp-about-desc-content mb-40">
                     <p>{about_des}</p>

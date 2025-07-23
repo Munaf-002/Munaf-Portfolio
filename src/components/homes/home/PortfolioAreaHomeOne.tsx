@@ -21,8 +21,8 @@ const portfolio_content = {
       title: 'Modalinex',
       url: 'https://modalinex.com', // <-- external link
     },
-    {
-    },
+    
+    
     {
       id: 3,
       img: portfolio_img_3,
