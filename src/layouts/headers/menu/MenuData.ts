@@ -30,7 +30,7 @@ const menu_data: DataType[] = [
   {
     id: 1,
     title: "Home",
-    link: "home",
+    link: "/home",
     img_dropdown: false,
     sub_menus: [
       { mobile_menu: false, link: "/", title: "Home 01", demo_img: demo_img_1, },
@@ -63,8 +63,8 @@ const menu_data: DataType[] = [
   {
     id: 3,
     title: "Services",
-    link: "#",
-    has_dropdown: true,
+    link: "/service",
+    has_dropdown: false,
     sub_menus: [
       { link: "/service", title: "Service" },
       { link: "/service-details", title: "Service Details" },
