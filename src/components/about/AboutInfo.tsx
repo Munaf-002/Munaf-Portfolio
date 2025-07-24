@@ -39,7 +39,7 @@ const AboutInfo = () => {
               <div className="ab-info__text">
 
                 <div>
-                  I'm Asif Khan <span className="line"></span> a self-taught Digital Designer & Developer with over four years of work experience. What started in my room turned into a journey of crafting responsive, fast, and user-focused websites — from Figma files to live projects. I focus on real results, not just pretty layouts.
+                  I'm Asif Khan <span className="line"></span> a self-taught Digital Designer & Developer with over four years of work experience. What started in my room turned into a journey of crafting responsive, fast, and user-focused websites 
 
                   {info_data.map((item, index) =>
                     <React.Fragment key={index}>

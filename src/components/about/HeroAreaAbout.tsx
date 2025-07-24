@@ -51,7 +51,7 @@ const HeroAreaAbout = () => {
           <div className="row">
             <div className="col-xl-4 col-lg-5">
               <div className="ab-hero__title-box">
-                <h3 className="ab-hero__title tp-char-animation">I' m Diego Luna</h3>
+                <h3 className="ab-hero__title tp-char-animation">I' m Asif Khan</h3>
               </div>
               <div className="ab-hero__btn-box">
                 <a className="tp-btn-border-sm" href="assets/img/cv/public/assets/img/cv/AsifKhan-wordpress.pdf" target="_blank" download>
