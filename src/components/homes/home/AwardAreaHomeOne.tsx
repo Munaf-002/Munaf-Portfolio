@@ -27,37 +27,37 @@ const award_content: DataType = {
   award_data: [
     {
       id: 1,
-      img: "/assets/img/award/award-5.jpg",
+      img: "/assets/img/award/award-1.png",
       company: "WordPress Expert",
       date: "3+ years building fast, custom WP sites",
     },
     {
       id: 2,
-      img: "/assets/img/award/award-6.jpg",
+      img: "/assets/img/award/award-2.png",
       company: "Elementor Specialist",
       date: "Designed 230+ pixel-perfect responsive layouts",
     },
     {
       id: 3,
-      img: "/assets/img/award/award-10.jpg",
+      img: "/assets/img/award/award-3.webp",
       company: "SEO-Focused",
       date: "Schema, meta tags, clean URLs, and structure",
     },
     {
       id: 4,
-      img: "/assets/img/award/award-1.jpg",
+      img: "/assets/img/award/award-4.png",
       company: "Speed Optimised",
       date: "90+ PageSpeed on mobile & desktop",
     },
     {
       id: 5,
-      img: "/assets/img/award/award-4.jpg",
+      img: "/assets/img/award/award-5.webp",
       company: "Real Impact",
       date: "Boosted lead generation and booking rates",
     },
     {
       id: 6,
-      img: "/assets/img/award/award-3.jpg",
+      img: "/assets/img/award/award-6.png",
       company: "UX/UI Focused",
       date: "Clean layouts optimized for user engagement",
     }
