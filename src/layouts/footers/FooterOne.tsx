@@ -6,7 +6,6 @@ import GoogleIconFooter from '@/svg/home/FooterIcons/GoogleIconFooter';
 import InstagramIconFooter from '@/svg/home/FooterIcons/InstagramIconFooter';
 import Link from 'next/link';
 
-
 interface DataType {
   title: string;
   title_2: JSX.Element;
@@ -17,6 +16,7 @@ interface DataType {
     name: string;
     user_name: string;
     icon: React.JSX.Element;
+    link: string; // ✅ added link property
   }[];
 }
 
@@ -31,34 +31,29 @@ const footer_content: DataType = {
       name: "Behance",
       user_name: "asifkhan591",
       icon: <BehanceIconFooter />,
+      link: "https://www.behance.net/asifkhan591",
     },
     {
       id: 2,
       name: "LinkedIn",
       user_name: "@asif490",
       icon: <GoogleIconFooter />,
+      link: "https://www.linkedin.com/in/asif490/",
     },
     {
       id: 3,
       name: "Instagram",
-      user_name: "@diego_des",
+      user_name: "@assif_khan490",
       icon: <InstagramIconFooter />,
+      link: "https://www.instagram.com/assif_khan490",
     },
   ]
 }
 
-const { btn_text_1, btn_text_2, title_2, footer_data } = footer_content
-
-
-
-
+const { btn_text_1, btn_text_2, title_2, footer_data } = footer_content;
 
 const FooterOne = ({ style }: any) => {
   const bg_img = style ? "/assets/img/footer/overly-bg-2.png" : "/assets/img/skill/bg-distort.png";
-
-
-
-
 
   return (
     <>
@@ -134,7 +129,7 @@ const FooterOne = ({ style }: any) => {
               <div className="row gx-50">
                 {footer_data.map((item, index) => (
                   <div key={index} className="col-xl-4 col-lg-4 col-md-6" style={{ marginBottom: "30px" }}>
-                    <a href="#">
+                    <a href={item.link} target="_blank" rel="noopener noreferrer">
                       <div className="tp-footer-social-item d-flex align-items-center justify-content-between">
                         <span className="tp-footer-anim-border"></span>
                         <div className="tp-footer-social-text z-index-1">
