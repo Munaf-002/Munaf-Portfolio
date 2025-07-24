@@ -10,20 +10,20 @@ interface DataType {
 
 const info_data: DataType[] = [
   {
-    title: "Product Design",
-    bg_img: "/assets/img/about/ab-1.png",
+    title: "WordPress Development",
+    bg_img: "/assets/img/award/award-1.png",
   },
   {
-    title: "Photography",
-    bg_img: "/assets/img/about/ab-2.png",
+    title: "WooCommerce Setup",
+    bg_img: "/assets/img/about/woocommerce.jpg",
   },
   {
     title: "Web Design",
-    bg_img: "/assets/img/about/ab-3.png",
+    bg_img: "/assets/img/about/web-design.png",
   },
   {
-    title: "Graphic Design",
-    bg_img: "/assets/img/about/ab-4.png",
+    title: "Landing Page Design",
+    bg_img: "/assets/img/award/award-6.png",
   }
 ]
 
@@ -39,9 +39,7 @@ const AboutInfo = () => {
               <div className="ab-info__text">
 
                 <div>
-                  I'm Diego <span className="line"></span> a self though & self learned designer
-                  based in USA. I started as a financial planner & social
-                  media marketer, but now I do mix of everything from
+                  I'm Asif Khan <span className="line"></span> a self-taught Digital Designer & Developer with over four years of work experience. What started in my room turned into a journey of crafting responsive, fast, and user-focused websites — from Figma files to live projects. I focus on real results, not just pretty layouts.
 
                   {info_data.map((item, index) =>
                     <React.Fragment key={index}>
