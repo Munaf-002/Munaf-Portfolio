@@ -25,7 +25,7 @@ const contact_content: DataType = {
   subtitle: "Contact Us",
   title_1: "Let’s Talk",
   title_2: "About your Project",
-  email: "hello@diego.com",
+  email: "itsasif009@gmail.com",
   mail_text: <>Interested in working with me? Submit your <br /> project inquiry using the form below.</>,
   categorys: [
     { id: "branding", title: "Branding" },

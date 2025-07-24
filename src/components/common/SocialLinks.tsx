@@ -18,12 +18,12 @@ const hero_social_data: HeroDataType[] = [
   },
   {
     id: 2,
-    link: "https://www.google.com",
+    link: "https://www.linkedin.com/in/asif490/",
     icon: <HeroGoogleIcon />,
   },
   {
     id: 3,
-    link: "https://www.behance.net",
+    link: "https://www.behance.net/asifkhan591",
     icon: <HeroBehanceIcon />,
   }
 ]
@@ -54,7 +54,7 @@ interface HDataType {
 const hero_link_home_three: HDataType[] = [
   {
     id: 1,
-    link: "https://www.facebook.com",
+    link: "https://www.facebook.com/adorable490/",
     title: "Facebook",
   },
   {
@@ -69,7 +69,7 @@ const hero_link_home_three: HDataType[] = [
   },
   {
     id: 4,
-    link: "https://www.instagram.com",
+    link: "https://www.instagram.com/assif_khan490/",
     title: "Instagram",
   }
 ]
@@ -98,7 +98,7 @@ type copy_right_text_type = {
 
 const copy_right_text: copy_right_text_type = {
   copy_right: <>
-    © {new Date().getFullYear()}  Diego, All Rights Reserved • <span>Credits</span>
+    © {new Date().getFullYear()}  Asipified by AK, All Rights Reserved • <span>Credits</span>
   </>,
   copy_rigth_2: `Themepure © ${new Date().getFullYear()}. All rights reserved.`
 }

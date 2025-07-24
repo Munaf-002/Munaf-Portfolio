@@ -29,13 +29,13 @@ const footer_content: DataType = {
     {
       id: 1,
       name: "Behance",
-      user_name: "@diego_des",
+      user_name: "asifkhan591",
       icon: <BehanceIconFooter />,
     },
     {
       id: 2,
-      name: "Google",
-      user_name: "@diego_des",
+      name: "LinkedIn",
+      user_name: "@asif490",
       icon: <GoogleIconFooter />,
     },
     {
