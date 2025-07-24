@@ -38,64 +38,64 @@ const personal_content: DataType = {
   skillsets_data: [
     {
       id: 1,
-      title: "Figma",
-      percent: 90
+      title: "CMS",
+      percent: 80
     },
     {
       id: 2,
-      title: "Sketch",
-      percent: 82
+      title: "HTML/CSS",
+      percent: 92
     },
     {
       id: 3,
-      title: "Photoshop",
-      percent: 65
+      title: "Custom WP",
+      percent: 75
     },
     {
       id: 4,
-      title: "Invision",
-      percent: 58
+      title: "Wordpress",
+      percent: 95
     }
   ],
   experience_data: [
     {
       id: 1,
-      time: "2022 - Present",
-      designation: "UI/UX Lead Designer",
-      company: "Amazon INC",
+      time: "2023 - Present",
+      designation: "Mid senior WordPress developer",
+      company: "Innotech cloud",
     },
     {
       id: 2,
-      time: "2018 - 2022",
-      designation: "Product Lead Designer",
-      company: "Amazon INC",
+      time: "2022 - 2023",
+      designation: "WordPress developer",
+      company: "The Expert Global solutions",
     },
     {
       id: 3,
-      time: "2016 - 2018",
-      designation: "Graphic Designer",
-      company: "Amazon INC",
+      time: "2021 - 2022",
+      designation: "Junior Wp Developer",
+      company: "Prime valley USA",
     }
 
   ],
   education_data: [
     {
       id: 1,
-      time: "2014 - 2016",
-      designation: "Stanford University",
-      collage: "of California.",
+      time: "2021",
+      designation: "University of Karachi",
+      collage: " Karachi.",
     },
     {
       id: 2,
-      time: "2012 - 2014",
-      designation: "Specialization Course.",
-      collage: "MIT University",
+      time: "2015 - 2017",
+      designation: "Intermediate",
+      collage: "Dj Science College",
     },
     {
       id: 3,
-      time: "2009 - 2012",
+      time: "2014",
       designation: "Level High School.",
-      collage: "San Fransisco",
+      collage: "The Beacon Public School",
     }
 
   ]
@@ -142,47 +142,47 @@ const PersonalInfo = () => {
                     </div> 
 
                     <div className="tp-services-capsule-item-wrapper">
-                      <p data-tp-throwable-el="">
-                        <span className="tp-services-capsule-item" style={{ backgroundColor: "#00CC97" }}>Frontend</span>
-                      </p>
-                      <p data-tp-throwable-el="">
-                        <span className="tp-services-capsule-item" style={{ backgroundColor: "#FF759C" }}>Phototyping</span>
-                      </p>
-                      <p data-tp-throwable-el="">
-                        <span className="tp-services-capsule-item" style={{ backgroundColor: "#FFDB59", color: "#121212" }}>Design solutions</span>
-                      </p>
-                      <p data-tp-throwable-el="">
-                        <span className="tp-services-capsule-item" style={{ backgroundColor: "#FFDB59", color: "#121212" }}>Consulting</span>
-                      </p>
-                      <p data-tp-throwable-el="">
-                        <span className="tp-services-capsule-item" style={{ backgroundColor: "#00CC97" }}>Brand strategy</span>
-                      </p>
-                      <p data-tp-throwable-el="">
-                        <span className="tp-services-capsule-item" style={{ backgroundColor: "#FFDB59", color: "#121212" }}>Consulting</span>
-                      </p>
-                      <p data-tp-throwable-el="">
-                        <span className="tp-services-capsule-item" style={{ backgroundColor: "#00CC97" }}>Brand strategy</span>
-                      </p>
-                      <p data-tp-throwable-el="">
-                        <span className="tp-services-capsule-item" style={{ backgroundColor: "#19B3F1" }}>UI/UX Design</span>
-                      </p>
-                      <p data-tp-throwable-el="">
-                        <span className="tp-services-capsule-item" style={{ backgroundColor: "#FF759C" }}>Design Audit</span>
-                      </p>
-                      <p data-tp-throwable-el="">
-                        <span className="tp-services-capsule-item" style={{ backgroundColor: "#FFDB59", color: "#121212" }}>Testing</span>
-                      </p>
-                      <p data-tp-throwable-el="">
-                        <span className="">
-                          <Image src={shape_1} alt="brand-img" />
-                        </span>
-                      </p>
-                      <p data-tp-throwable-el="">
-                        <span className="">
-                          <Image src={shape_2} alt="brand-img" />
-                        </span>
-                      </p>
-                    </div>
+                    <p data-tp-throwable-el="">
+                      <span className="tp-services-capsule-item" style={{ backgroundColor: "#00CC97" }}>Frontend</span>
+                    </p>
+                    <p data-tp-throwable-el="">
+                      <span className="tp-services-capsule-item" style={{ backgroundColor: "#FF759C" }}>Wordpress</span>
+                    </p>
+                    <p data-tp-throwable-el="">
+                      <span className="tp-services-capsule-item" style={{ backgroundColor: "#FFDB59", color: "#121212" }}>Design solutions</span>
+                    </p>
+                    <p data-tp-throwable-el="">
+                      <span className="tp-services-capsule-item" style={{ backgroundColor: "#FFDB59", color: "#121212" }}>HTML/CSS</span>
+                    </p>
+                    <p data-tp-throwable-el="">
+                      <span className="tp-services-capsule-item" style={{ backgroundColor: "#00CC97" }}>Brand strategy</span>
+                    </p>
+                    <p data-tp-throwable-el="">
+                      <span className="tp-services-capsule-item" style={{ backgroundColor: "#FFDB59", color: "#121212" }}>Webflow</span>
+                    </p>
+                    <p data-tp-throwable-el="">
+                      <span className="tp-services-capsule-item" style={{ backgroundColor: "#00CC97" }}>Elementor</span>
+                    </p>
+                    <p data-tp-throwable-el="">
+                      <span className="tp-services-capsule-item" style={{ backgroundColor: "#19B3F1" }}>UI/UX Design</span>
+                    </p>
+                    <p data-tp-throwable-el="">
+                      <span className="tp-services-capsule-item" style={{ backgroundColor: "#FF759C" }}>CMS</span>
+                    </p>
+                    <p data-tp-throwable-el="">
+                      <span className="tp-services-capsule-item" style={{ backgroundColor: "#FFDB59", color: "#121212" }}>Testing</span>
+                    </p>
+                    <p data-tp-throwable-el="">
+                      <span className="">
+                        <Image src={shape_1} alt="brand-img" />
+                      </span>
+                    </p>
+                    <p data-tp-throwable-el="">
+                      <span className="">
+                        <Image src={shape_2} alt="brand-img" />
+                      </span>
+                    </p>
+                  </div>
                   </div>
                 </div>
               </div>
