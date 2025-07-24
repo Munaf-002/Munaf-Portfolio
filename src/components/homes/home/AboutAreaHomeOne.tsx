@@ -53,7 +53,7 @@ const AboutAreaHomeOne = () => {
           <div className="tp-about-inner pt-145 pb-80" style={{ paddingTop: "145px", paddingBottom: "80px" }}>
             <span className="tp-about-inner-border transition-3"></span>
             <div className="row">
-              <div className="col-xl-5 col-lg-5">
+              {/* <div className="col-xl-5 col-lg-5">
                 <div className="tp-about-wrapper">
                   <div className="tp-section-title-wrapper p-relative mb-45">
                     <span className="tp-section-subtitle-bg">{subtitle}</span>
@@ -67,7 +67,7 @@ const AboutAreaHomeOne = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className="col-xl-7 col-lg-7">
                 <div className="tp-about-desc">
                   /* <div className="tp-about-award d-inline-block">
