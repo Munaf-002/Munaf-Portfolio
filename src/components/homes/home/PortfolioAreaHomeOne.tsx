@@ -19,15 +19,14 @@ const portfolio_content = {
       img: portfolio_img_2,
       bg_img: "/assets/img/portfolio/modalinex.png",
       title: 'Afilcorp',
-      url: 'https://modalinex.com', // <-- external link
+      url: 'https://staging54.ibaxs.com/', // ✅ updated
     },
-    
-    
     {
       id: 3,
       img: portfolio_img_3,
       bg_img: "/assets/img/portfolio/afilcorp.png",
       title: "Christopher Leigh Dodson",
+      url: 'https://christopherleighdodson.com/', // ✅ added
     }
   ]
 }
@@ -55,7 +54,7 @@ const PortfolioAreaHomeOne = () => {
                 </div>
                 <div className="tp-portfolio-item-wrapper">
                   <div className="tp-portfolio-item mb-70">
-                    <Link href="/portfolio-details">
+                    <Link href="https://modalinex.com/" target="_blank"> {/* ✅ updated */}
                       <div className="tp-portfolio-thumb img-1 w-img fix ">
                         <div className="tp-portfolio-thumb-img include-bg d-none"
                           style={{ backgroundImage: 'url(/assets/img/portfolio/christopher.png)' }}></div>
@@ -97,13 +96,13 @@ const PortfolioAreaHomeOne = () => {
               <div className="tp-portfolio-item-wrapper pl-50">
                 {portfolio_data.map((item, i) =>
                   <div key={i} className="tp-portfolio-item mb-70">
-                    <Link href="/portfolio-details">
+                    <Link href={item.url} target="_blank"> {/* ✅ updated */}
                       <div className="tp-portfolio-thumb img-2 w-img fix">
 
                         <div className="tp-portfolio-thumb-img include-bg d-none"
                           style={{ backgroundImage: `url(${item.bg_img})`, height: "auto" }}></div>
                         <div className="tp-portfolio-thumb-img">
-                          <Image data-speed="0.85" style={{ height: "auto",}} src={item.img} alt="image-here" />
+                          <Image data-speed="0.85" style={{ height: "auto" }} src={item.img} alt="image-here" />
                         </div>
                       </div>
                       <div className="tp-portfolio-content">
@@ -121,7 +120,7 @@ const PortfolioAreaHomeOne = () => {
                       </div>
                     </Link>
                   </div>
-                )} 
+                )}
               </div>
             </div>
           </div>
