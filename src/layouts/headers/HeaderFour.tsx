@@ -101,14 +101,27 @@ const HeaderFour = ({ style }: any) => {
                 <div className="tp-header-3__logo">
                   {style ?
                     <>
-                      <Link className="logo-white" href="/"><Image src={logo} alt="logo" width={120} height={50} /></Link>
-                      <Link className="logo-black" href="/"><Image src={logo} alt="logo" width={120} height={50} /></Link>
+                      <Link className="logo-white" href="/">
+                              <Image
+                                src={lightLogo}
+                                alt="diego-image"
+                                style={{ width: '115px', height: 'auto' }}
+                              />
+                            </Link>
+                            <Link className="logo-black" href="/">
+                              <Image
+                                src={darkLogo}
+                                alt="diego-image"
+                                style={{ width: '115px', height: 'auto' }}
+                              />
+                            </Link>
+
                     </>
                     :
                     <>
 
-                      <Link className="logo-white" href="/"><Image src={lightLogo} alt="image-here" /></Link>
-                      <Link className="logo-black" href="/"><Image src={darkLogo} alt="image-here" /></Link>
+                      <Link className="logo-white" href="/"><Image src={lightLogo} alt="image-here" style={{ width: '115px', height: 'auto' }} /></Link>
+                      <Link className="logo-black" href="/"><Image src={darkLogo} alt="image-here" style={{ width: '115px', height: 'auto' }} /></Link>
                     </>
 
                   }
