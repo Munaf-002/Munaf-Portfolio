@@ -88,11 +88,11 @@ const Offcanvas = ({ showCanvas, setShowCanvas, style_bg, style_bg2 }: any) => {
 
               <div className="tpoffcanvas__right-info">
                 <div className="tpoffcanvas__tel">
-                  <a href="tel:61404093954">+61404093 954</a>
+                  <a href="tel:+923132685490">+92313 2685490</a>
                 </div>
                 <div className="tpoffcanvas__mail">
-                  <a href="mailto:hellocontact@diego.com">
-                    hello contact@diego.com</a>
+                  <a href="mailto:itsasif009@gmail.com">
+                    itsasif009@gmail.com</a>
                 </div>
                 <div className="tpoffcanvas__text">
                   <p>If in doubt. reach out.</p>
@@ -101,10 +101,10 @@ const Offcanvas = ({ showCanvas, setShowCanvas, style_bg, style_bg2 }: any) => {
 
               <div className="tpoffcanvas__social-link">
                 <ul>
-                  <li><a href="https://www.dribbble.com" target="_blank">Dribbble</a></li>
-                  <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
-                  <li><a href="https://www.linkedin.com" target="_blank">Linkedin</a></li>
-                  <li><a href="https://www.behance.com" target="_blank">Behance</a></li>
+                  {/* <li><a href="https://www.dribbble.com" target="_blank">Dribbble</a></li> */}
+                  <li><a href="https://www.instagram.com/assif_khan490" target="_blank">Instagram</a></li>
+                  <li><a href="https://www.linkedin.com/in/asif490/" target="_blank">Linkedin</a></li>
+                  <li><a href="https://www.behance.net/asifkhan591" target="_blank">Behance</a></li>
                 </ul>
               </div>
             </div>

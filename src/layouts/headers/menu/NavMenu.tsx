@@ -19,7 +19,7 @@ const NavMenu = () => {
                       {!sub_menu.mobile_menu &&
                         <>
                           <div className="homemenu-thumb mb-15">
-                            <Link href={sub_menu.link}><Image src={sub_menu.demo_img} alt="diego-image" /></Link>
+                            <Link href={sub_menu.link}><Image src={sub_menu.demo_img} alt="asipified-image" /></Link>
                           </div>
                           <div className="homemenu-content text-center">
                             <h4 className="homemenu-title">

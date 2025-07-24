@@ -13,7 +13,7 @@ interface HeroDataType {
 const hero_social_data: HeroDataType[] = [
   {
     id: 1,
-    link: "https://mail.google.com",
+    link: "mailto:itsasif009@gmail.com",
     icon: <HeroEmailIcon />,
   },
   {

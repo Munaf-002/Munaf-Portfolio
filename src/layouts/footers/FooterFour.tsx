@@ -35,7 +35,7 @@ const footer_content: DataType = {
     {
       id: 1,
       cls: "gmail",
-      link: "https://mail.google.com",
+      link: "itsasif009@gmail.com",
       icon: <HeroEmailIcon />,
     },
     {
@@ -47,7 +47,7 @@ const footer_content: DataType = {
     {
       id: 3,
       cls: "behance",
-      link: "https://www.behance.net",
+      link: "https://www.behance.net/asifkhan591",
       icon: <HeroBehanceIcon />,
     },
     {
@@ -63,7 +63,7 @@ const footer_content: DataType = {
     { title: "Portfolio", link: "/portfolio" },
     { title: "Contact", link: "/contact" },
   ],
-  address: <>California <span></span> <br /> 987 Design Blvd, Suite 543, Beverly Hills, CA 902</>,
+  address: <>Karachi <span></span> <br /> 987 Design Blvd, Suite 543, Beverly Hills, CA 902</>,
   email: "hello@youremail.com",
   phone: "+1(789) 8001234",
 }
