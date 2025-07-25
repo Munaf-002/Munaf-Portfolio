@@ -46,7 +46,7 @@ const Offcanvas2 = ({ showCanvas, setShowCanvas }: any) => {
           <div className="tp-offcanvas-main-2">
             <div className="tp-offcanvas-content-2">
               <h3 className="tp-offcanvas-content-title-2">Hello There!</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
+              <p>I'm Asif — a creative web developer building elegant and performant websites with a focus on simplicity, speed, and scalability. </p>
             </div>
             <div className="tp-main-menu-mobile d-lg-none">
               <nav>
@@ -81,16 +81,16 @@ const Offcanvas2 = ({ showCanvas, setShowCanvas }: any) => {
               <h3 className="tp-offcanvas-contact-title-2">Information</h3>
 
               <ul>
-                <li><a href="tel:1245654">+ 4 20 7700 1007</a></li>
-                <li><a href="mailto:hello@diego.com">hello@diego.com</a></li>
-                <li><a href="#">Avenue de Roma 158b, Lisboa</a></li>
+                <li><a href="tel:1245654">+923132685490</a></li>
+                <li><a href="mailto:itsasif009@gmail.com">itsasif009@gmail.com</a></li>
+                <li><a href="#">Karachi, Pakistan</a></li>
               </ul>
             </div>
             <div className="tp-offcanvas-social-2">
-              <h3 className="tp-offcanvas-contact-title-2">Follow Us</h3>
+              <h3 className="tp-offcanvas-contact-title-2">Follow  </h3>
               <ul>
                 <li>
-                  <a href="#">
+                  <a href="https://www.instagram.com/assif_khan490" target="_blank" rel="noopener noreferrer"">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M11.25 1.5H4.75C2.95507 1.5 1.5 2.95507 1.5 4.75V11.25C1.5 13.0449 2.95507 14.5 4.75 14.5H11.25C13.0449 14.5 14.5 13.0449 14.5 11.25V4.75C14.5 2.95507 13.0449 1.5 11.25 1.5Z"
@@ -104,7 +104,7 @@ const Offcanvas2 = ({ showCanvas, setShowCanvas }: any) => {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://www.linkedin.com/in/asif490/" target="_blank" rel="noopener noreferrer">
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M2.50589 12.7494C4.57662 16.336 9.16278 17.5648 12.7494 15.4941C14.2113 14.65 15.2816 13.388 15.8962 11.9461C16.7895 9.85066 16.7208 7.37526 15.4941 5.25063C14.2674 3.12599 12.1581 1.82872 9.89669 1.55462C8.34063 1.366 6.71259 1.66183 5.25063 2.50589C1.66403 4.57662 0.435172 9.16278 2.50589 12.7494Z"
@@ -116,7 +116,7 @@ const Offcanvas2 = ({ showCanvas, setShowCanvas }: any) => {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://www.behance.net/asifkhan591" target="_blank" rel="noopener noreferrer">
                     <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M1 5.5715H6.33342C7.62867 5.5715 8.61917 6.56199 8.61917 7.85725C8.61917 9.15251 7.62867 10.143 6.33342 10.143H1.76192C1.30477 10.143 1 9.83823 1 9.38108V1.76192C1 1.30477 1.30477 1 1.76192 1H5.5715C6.86676 1 7.85725 1.99049 7.85725 3.28575C7.85725 4.58101 6.86676 5.5715 5.5715 5.5715H1Z"
@@ -130,7 +130,7 @@ const Offcanvas2 = ({ showCanvas, setShowCanvas }: any) => {
                     </svg>
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="#">
                     <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -142,7 +142,7 @@ const Offcanvas2 = ({ showCanvas, setShowCanvas }: any) => {
                         fill="currentColor" />
                     </svg>
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
