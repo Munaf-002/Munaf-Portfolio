@@ -27,7 +27,7 @@ const Offcanvas2 = ({ showCanvas, setShowCanvas }: any) => {
         <div className="tp-offcanvas-wrapper">
           <div className="tp-offcanvas-top-2 d-flex align-items-center justify-content-between">
             <div className="tp-offcanvas-logo-2">
-              <a href="#">
+              <a href="/home">
                 <Image className="logo-white" src={logo_white} style={{height: 'auto'}} alt="image" />
                 <Image className="logo-black" src={logo_black} style={{height: 'auto'}} alt="image" />
               </a>
@@ -81,7 +81,7 @@ const Offcanvas2 = ({ showCanvas, setShowCanvas }: any) => {
               <h3 className="tp-offcanvas-contact-title-2">Information</h3>
 
               <ul>
-                <li><a href="tel:1245654">+923132685490</a></li>
+                <li><a href="tel:+923132685490">+923132685490</a></li>
                 <li><a href="mailto:itsasif009@gmail.com">itsasif009@gmail.com</a></li>
                 <li><a href="#">Karachi, Pakistan</a></li>
               </ul>
@@ -90,7 +90,7 @@ const Offcanvas2 = ({ showCanvas, setShowCanvas }: any) => {
               <h3 className="tp-offcanvas-contact-title-2">Follow  </h3>
               <ul>
                 <li>
-                  <a href="https://www.instagram.com/assif_khan490" target="_blank" rel="noopener noreferrer"">
+                  <a href="https://www.instagram.com/assif_khan490" target="_blank" rel="noopener noreferrer">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M11.25 1.5H4.75C2.95507 1.5 1.5 2.95507 1.5 4.75V11.25C1.5 13.0449 2.95507 14.5 4.75 14.5H11.25C13.0449 14.5 14.5 13.0449 14.5 11.25V4.75C14.5 2.95507 13.0449 1.5 11.25 1.5Z"
