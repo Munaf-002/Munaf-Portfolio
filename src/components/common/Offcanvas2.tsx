@@ -10,7 +10,7 @@ import logo_black from "@/assets/img/logo/logo-black.png";
 import offcanvas_1 from "@/assets/img/offcanvas/offcanvas-1.png";
 import offcanvas_2 from "@/assets/img/offcanvas/offcanvas-2.webp";
 import offcanvas_3 from "@/assets/img/offcanvas/offcanvas-3.png";
-import offcanvas_4 from "@/assets/img/offcanvas/offcanvas-4.jpg"; 
+import offcanvas_4 from "@/assets/img/offcanvas/offcanvas-4.jpeg"; 
 
 const Offcanvas2 = ({ showCanvas, setShowCanvas }: any) => {
   return (
