@@ -7,9 +7,10 @@ import bg_shape from "@/assets/img/offcanvas/bg-shape-3.png";
 import logo_white from "@/assets/img/logo/logo.png";
 import logo_black from "@/assets/img/logo/logo-black.png";
 
-import offcanvas_1 from "@/assets/img/offcanvas/offcanvas-1.jpg";
-import offcanvas_2 from "@/assets/img/offcanvas/offcanvas-2.jpg";
-import offcanvas_3 from "@/assets/img/offcanvas/offcanvas-3.jpg"; 
+import offcanvas_1 from "@/assets/img/offcanvas/offcanvas-1.png";
+import offcanvas_2 from "@/assets/img/offcanvas/offcanvas-2.webp";
+import offcanvas_3 from "@/assets/img/offcanvas/offcanvas-3.png";
+import offcanvas_4 from "@/assets/img/offcanvas/offcanvas-4.jpg"; 
 
 const Offcanvas2 = ({ showCanvas, setShowCanvas }: any) => {
   return (
@@ -72,7 +73,7 @@ const Offcanvas2 = ({ showCanvas, setShowCanvas }: any) => {
                 </div>
                 <div className="col-md-3 col-3">
                   <div className="tp-offcanvas-gallery-img fix">
-                    <a href="#"><Image src={offcanvas_2} alt="image" /></a>
+                    <a href="#"><Image src={offcanvas_4} alt="image" /></a>
                   </div>
                 </div>
               </div>
