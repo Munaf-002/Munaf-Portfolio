@@ -92,7 +92,7 @@ const FooterOne = ({ style }: any) => {
                     </div>
                     <div className="col-xl-6 col-lg-6 col-md-6">
                       <div className="tp-footer-btn text-center">
-                        <a className="tp-btn-grey-xl w-100" target="_blank" href="mailto:itsasif009@gmail.com">
+                        <a className="tp-btn-grey-xl w-100" href="mailto:itsasif009@gmail.com">
                           <div>
                             <span>Write a Message</span>
                           </div>
@@ -106,7 +106,7 @@ const FooterOne = ({ style }: any) => {
                   <div className="row">
                     <div className="col-xl-6 col-lg-6 col-md-6">
                       <div className="tp-footer-btn text-center ">
-                        <a className="tp-btn-green w-100" href="mailto:itsasif009@gmail.com" target="_blank">
+                        <a className="tp-btn-green w-100" href="mailto:itsasif009@gmail.com">
                           <div>
                             <span>{btn_text_1}</span>
                           </div>
