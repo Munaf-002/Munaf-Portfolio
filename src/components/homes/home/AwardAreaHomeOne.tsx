@@ -1,13 +1,12 @@
 'use client';
 import Link from 'next/link';
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import AwardUpArrowIcon from '@/svg/home/AwardIcons/AwardUpArrowIcon';
 import AwardLeftArrowIcon from '@/svg/home/AwardIcons/AwardLeftArrowIcon';
 import award_start from "@/assets/img/award/shape/award-shape-1.png";
 import UseHoverReveal from '@/hooks/UseHoverReveal';
-
 
 interface DataType {
   subtitle: string;
@@ -19,7 +18,6 @@ interface DataType {
     date: string;
   }[];
 }
-
 
 const award_content: DataType = {
   subtitle: "Highlights",
@@ -66,73 +64,87 @@ const award_content: DataType = {
 
 const { subtitle, title, award_data } = award_content;
 
-const AwardAreaHomeOne = ({ style_2 }: {style_2?: boolean}) => {
-  const {handleMouseMove} = UseHoverReveal();
-  const bg_img  = style_2 ? null : '/assets/img/bg/distort-bg.png';
+const AwardAreaHomeOne = ({ style_2 }: { style_2?: boolean }) => {
+  const { handleMouseMove } = UseHoverReveal();
+  const [isTouch, setIsTouch] = useState(false);
+  const bg_img = style_2 ? null : '/assets/img/bg/distort-bg.png';
 
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+      setIsTouch(isTouchDevice);
+    }
+  }, []);
 
   return (
-    <>
-      <section 
+    <section 
       style={{ backgroundImage: `url(${bg_img})` }} 
-      className={`tp-award-area pt-120 ${style_2 ? 'tp-award-customize black-bg-3 pb-50' : 'theme-bg pb-120 tp-bg-light p-relative'}`}>
-        <div className="container">
-          <div className={`tp-award-inner pb-80 ${style_2 ? '' : 'p-relative'}`}>
-            {style_2 ? null : <span className="tp-award-bottom-border"></span>}
-            <div className="row">
-              <div className="col-xl-5">
-                <div className="tp-award-wrapper">
-                  <div className="tp-section-title-wrapper mb-30">
-                    <div className={`tp-section-title-inner p-relative ${style_2 ? '' : 'tp_title_anim'}`}>
-                      {style_2 ? null : <span className="tp-section-subtitle tp-award-subtitle">{subtitle}</span>}
-                      <h3 className={`tp-section-title ${style_2 ? 'tp_title_anim' : ''}`}>{title}</h3>
-                    </div>
+      className={`tp-award-area pt-120 ${style_2 ? 'tp-award-customize black-bg-3 pb-50' : 'theme-bg pb-120 tp-bg-light p-relative'}`}
+    >
+      <div className="container">
+        <div className={`tp-award-inner pb-80 ${style_2 ? '' : 'p-relative'}`}>
+          {style_2 ? null : <span className="tp-award-bottom-border"></span>}
+          <div className="row">
+            <div className="col-xl-5">
+              <div className="tp-award-wrapper">
+                <div className="tp-section-title-wrapper mb-30">
+                  <div className={`tp-section-title-inner p-relative ${style_2 ? '' : 'tp_title_anim'}`}>
+                    {style_2 ? null : <span className="tp-section-subtitle tp-award-subtitle">{subtitle}</span>}
+                    <h3 className={`tp-section-title ${style_2 ? 'tp_title_anim' : ''}`}>{title}</h3>
                   </div>
-                  <div className="tp-award-text-wrapper p-relative">
-                    <h3 className="tp-award-text-outline d-none d-xl-block" data-speed="1.1" data-lag="0.1">{subtitle}</h3>
-                    <h3 className="tp-award-text-fill d-none d-xl-block" data-speed="1.3" data-lag="0.2">{subtitle} </h3>
-                    <div className="tp-award-shape">
-                      <Image className="tp-award-shape-1" data-speed="1" data-lag="0.1" src={award_start} alt="diego" />
-                    </div>
+                </div>
+                <div className="tp-award-text-wrapper p-relative">
+                  <h3 className="tp-award-text-outline d-none d-xl-block" data-speed="1.1" data-lag="0.1">{subtitle}</h3>
+                  <h3 className="tp-award-text-fill d-none d-xl-block" data-speed="1.3" data-lag="0.2">{subtitle}</h3>
+                  <div className="tp-award-shape">
+                    <Image className="tp-award-shape-1" data-speed="1" data-lag="0.1" src={award_start} alt="diego" />
                   </div>
                 </div>
               </div>
-              <div className="col-xl-7">
-                <div className="tp-award-item-wrapper pt-35 pl-70">
-                  {award_data.map((award) => (
-                    <div key={award.id} className="tp-award-item p-relative tp-hover-reveal-item" 
-                    onMouseMove={(event) => handleMouseMove(event, '.tp-hover-reveal-item')}>
-                      <Link href="/about" className="d-block">
-                        <div
-                          className="tp-award-item-inner d-flex align-items-center justify-content-between flex-wrap">
-                          <div className="tp-award-arrow">
-                            <AwardLeftArrowIcon />
-                          </div>
-                          <div className="tp-award-content">
-                            <h3 className="tp-award-title">{award.company}</h3>
-                            <p>{award.date}</p>
-                          </div>
-                          <div className="tp-award-btn-wrapper">
-                            <span className="tp-award-btn">
-                              <span>
-                                <AwardUpArrowIcon />
-                                <AwardUpArrowIcon />
-                              </span>
-                            </span>
-                          </div>
+            </div>
+            <div className="col-xl-7">
+              <div className="tp-award-item-wrapper pt-35 pl-70">
+                {award_data.map((award) => (
+                  <div
+                    key={award.id}
+                    className="tp-award-item p-relative tp-hover-reveal-item"
+                    onMouseMove={(event) => {
+                      if (!isTouch) {
+                        handleMouseMove(event, '.tp-hover-reveal-item');
+                      }
+                    }}
+                  >
+                    <Link href="/about" className="d-block">
+                      <div className="tp-award-item-inner d-flex align-items-center justify-content-between flex-wrap">
+                        <div className="tp-award-arrow">
+                          <AwardLeftArrowIcon />
                         </div>
-                      </Link>
+                        <div className="tp-award-content">
+                          <h3 className="tp-award-title">{award.company}</h3>
+                          <p>{award.date}</p>
+                        </div>
+                        <div className="tp-award-btn-wrapper">
+                          <span className="tp-award-btn">
+                            <span>
+                              <AwardUpArrowIcon />
+                              <AwardUpArrowIcon />
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </Link>
+                    {!isTouch && (
                       <div className="tp-hover-reveal-bg" style={{ backgroundImage: `url(${award.img})` }}></div>
-                      <span className="tp-award-inner-border"></span>
-                    </div>
-                  ))}
-                </div>
+                    )}
+                    <span className="tp-award-inner-border"></span>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
 
