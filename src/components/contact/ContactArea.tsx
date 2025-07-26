@@ -92,7 +92,15 @@ const ContactArea = () => {
                   <div className="col-xl-6 col-lg-6 col-md-6">
                     <div className="contact-inner__mail-info">
                       <span>Email Me:</span>
-                      <a href={`mailto:${email}`}>{email}</a>
+                      <a
+                             href={`mailto:${email}`}
+                              style={{
+                                fontSize: '24px'
+                                
+                              }}
+                            >
+                              {email}
+                            </a>
                     </div>
                   </div>
                   <div className="col-xl-6 col-lg-6 col-md-6">
