@@ -137,7 +137,7 @@ const PersonalInfo = () => {
                       </h4>
                       <p>{title}</p>
                       <a href={`mailto:${email}`}>{email}</a>
-                      <a href={`tel:${phone}`}><span>
+                      <a href={`https://wa.me/${phone.replace(/\D/g, '')}`} target="_blank"><span>
                         <Image src={whatsap} alt="image-here" /></span>{phone}</a>
                     </div> 
 
