@@ -132,7 +132,7 @@ const ContactForm = () => {
               </div>
             </div>
           </div>
-          <div className="row">
+          {/* <div className="row">
             <div className="col-xl-12">
               <div className="contact-inner__category mb-45">
                 <h4 className="contact-inner__category-title">Project budget (USD)</h4>
@@ -152,7 +152,7 @@ const ContactForm = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="row">
             <div className="col-xxl-12">
               <div className="postbox__comment-btn">
