@@ -1,7 +1,7 @@
 'use client'
 import React from 'react';
 import ContactArea from './ContactArea';
-import HeaderOne from '@/layouts/headers/HeaderOne';
+import HeaderFour from '@/layouts/headers/HeaderFour';
 import FooterOne from '@/layouts/footers/FooterOne';
 
 
@@ -9,7 +9,7 @@ import FooterOne from '@/layouts/footers/FooterOne';
 const Contact = () => {
   return (
     <>
-      <HeaderOne />
+      <HeaderFour />
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>

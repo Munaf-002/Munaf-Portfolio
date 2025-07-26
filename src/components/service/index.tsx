@@ -3,7 +3,7 @@ import SeviceHeroArea from './SeviceHeroArea';
 import ServiceInfoArea from './ServiceInfoArea';
 import FooterOne from '@/layouts/footers/FooterOne';
 import BrandAreaAbout from '../about/BrandAreaAbout';
-import HeaderOne from '@/layouts/headers/HeaderOne';
+import HeaderFour from '@/layouts/headers/HeaderFour';
 import PriceAreaHomeOne from '../homes/home/PriceAreaHomeOne';
 import ServiceAreaHomeThree from '../homes/home-3/ServiceAreaHomeThree';
 import TestimonialAreaHomeOne from '../homes/home/TestimonialAreaHomeOne';
@@ -12,7 +12,7 @@ import TestimonialAreaHomeOne from '../homes/home/TestimonialAreaHomeOne';
 const Service = () => {
   return (
     <>
-      <HeaderOne />
+      <HeaderFour />
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>

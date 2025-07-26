@@ -6,14 +6,14 @@ import PersonalInfo from './PersonalInfo';
 import HeroAreaAbout from './HeroAreaAbout';
 // import BrandAreaAbout from './BrandAreaAbout';
 import FooterOne from '@/layouts/footers/FooterOne';
-import HeaderOne from '@/layouts/headers/HeaderOne';
+import HeaderFour from '@/layouts/headers/HeaderFour';
 import AwardAreaHomeOne from '../homes/home/AwardAreaHomeOne';
 
 
 const About = () => {
   return (
     <>
-      <HeaderOne />
+      <HeaderFour />
       <div id="smooth-wrapper" className="black-bg-3">
         <div id="smooth-content">
           <main>

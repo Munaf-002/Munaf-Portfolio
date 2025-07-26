@@ -7,8 +7,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import brand_img_1 from "@/assets/img/brand/getsha.png";
 import brand_img_2 from "@/assets/img/brand/AFILCORP-UK-LOGO.png";
 import brand_img_3 from "@/assets/img/brand/christopher.png";
-import brand_img_4 from "@/assets/img/brand/modalinex.webp";
-import brand_img_5 from "@/assets/img/brand/nalytoo.webp";
+import brand_img_4 from "@/assets/img/brand/modalinex.png";
+import brand_img_5 from "@/assets/img/brand/nalytoo.png";
 
 const brand_images = [
   brand_img_1, brand_img_2, brand_img_3, brand_img_4, brand_img_5,
