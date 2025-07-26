@@ -28,44 +28,44 @@ const service_content: DataType = {
       id: 1,
       tab_id: "One",
       question: "UI/UX Design",
-      answer: "Project systematization is something I place a lot of emphasis on. My passion Design Systems.",
+      answer: "I care deeply about intuitive layouts, readability, and user-first experiences — all translated through WordPress.",
       some_features: [
-        "Interface design",
-        "Creating design systems",
-        "Ui kits",
+        "Clean layout hierarchy",
+        "Conversion-focused structure",
+        "Mobile-first mindset",
       ]
     },
     {
       id: 2,
       tab_id: "Two",
-      question: "Design Systems",
-      answer: "Project systematization is something I place a lot of emphasis on. My passion Design Systems.",
+      question: "Design Integration",
+      answer: "I turn design files into pixel-perfect, responsive websites using Elementor, custom themes, and block builders.",
       some_features: [
-        "Interface design",
-        "Creating design systems",
-        "Ui kits",
+        "Figma to WordPress",
+        "Elementor & Gutenberg",
+        "Layout consistency",
       ]
     },
     {
       id: 3,
       tab_id: "Three",
-      question: "Website Design",
-      answer: "Project systematization is something I place a lot of emphasis on. My passion Design Systems.",
+      question: "Website Development",
+      answer: "I build fast, SEO-ready, and secure WordPress websites using best practices and lean customization.",
       some_features: [
-        "Interface design",
-        "Creating design systems",
-        "Ui kits",
+        "Theme development",
+        "Speed optimization",
+        "Plugin setup & config",
       ]
     },
     {
       id: 4,
       tab_id: "Four",
-      question: "Branding",
-      answer: "Project systematization is something I place a lot of emphasis on. My passion Design Systems.",
+      question: "Branding-Friendly Buildsg",
+      answer: "Every site I build reflects the brand’s essence — visually cohesive, technically sound, and easy to manage.",
       some_features: [
-        "Interface design",
-        "Creating design systems",
-        "Ui kits",
+        "Typography & color systems",
+        "Brand consistency",
+        "Editable & scalable builds",
       ]
     }
   ]
