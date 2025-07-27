@@ -36,7 +36,7 @@ const hero_content: DataType = {
     {
       id: 3,
       delay: ".7s",
-      title: "WordPress Development (Elementor, Custom Themes)",
+      title: "WordPress (Elementor, Custom Themes)",
     },
   ],
   slider_images_1: [
