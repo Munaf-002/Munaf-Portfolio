@@ -22,13 +22,14 @@ interface DataType {
     sm_des: React.JSX.Element;
     tag_1: string;
     tag_2: string;
+    
   }[];
 }
 
 
 const service_content: DataType = {
   subtitle: "OUR PROCESS",
-  title: <>How We <br /> Carry Out Our Projects</>,
+  title: <>How We <br /> Execute Your Vision</>,
   sm_info: <>We offer a range of services to help elevate <br /> your brand & drive results.</>,
   btn_text: <>Call me to get more extra service <span>Call Now</span></>,
   service_data: [
@@ -36,23 +37,24 @@ const service_content: DataType = {
       id: 1,
       icon: <StrategyIcno />,
       title: <>Design <br /> Strategy</>,
-      sm_des: <>We always ensure that it combines a clean <br /> and beautiful visual design.</>,
-      tag_1: "UI/UX Audit",
-      tag_2: "Workshops",
+      sm_des: <>We blend clarity and creativity to craft clean <br /> strategic visual design.</>,
+      tag_1: "Consistency",
+      tag_2: "Visuals",
+      
     },
     {
       id: 2,
       icon: <LeadershipIcon />,
-      title: <>Product <br /> Leadership</>,
-      sm_des: <>We always ensure that it combines a clean <br /> and beautiful visual design.</>,
-      tag_1: "UI/UX Audit",
-      tag_2: "Workshops",
+      title: <>CMS  <br /> & Site Setup</>,
+      sm_des: <>We build easy-to-manage websites with clean structure  <br /> and smooth content control.</>,
+      tag_1: "WordPress",
+      tag_2: "Structure",
     },
     {
       id: 2,
       icon: <DevelopmentIcon />,
-      title: <>Front-End <br /> Development</>,
-      sm_des: <>We always ensure that it combines a clean <br /> and beautiful visual design.</>,
+      title: <>Creative  <br /> Strategy</>,
+      sm_des: <>We merge creative vision with practical design  <br /> thinking to guide digital products.</>,
       tag_1: "UI/UX Audit",
       tag_2: "Workshops",
     },
@@ -119,7 +121,7 @@ const ServiceAreaHomeThree = ({ style }: any) => {
                   </div>
                 ))}
                 <div className="tp-service-3__btn-box">
-                  <Link href="/contact">{btn_text}</Link>
+                  <Link href="tel:+923132685490">{btn_text}</Link>
                 </div>
               </div>
             </div>

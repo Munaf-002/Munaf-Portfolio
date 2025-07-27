@@ -35,9 +35,10 @@ const project_content: DataType = {
     {
       id: 1,
       img: project_img_1,
-      bg_img: '/assets/img/portfolio/port-inner-up-1.jpg',
-      title: 'Space Needle',
-      category: 'Branding',
+      bg_img: '/assets/img/portfolio/modalinex.png',
+      title: 'Afilcorp',
+      category: 'Web Development',
+     
     },
     {
       id: 4,

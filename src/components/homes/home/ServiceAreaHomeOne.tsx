@@ -60,7 +60,7 @@ const service_content: DataType = {
     {
       id: 4,
       tab_id: "Four",
-      question: "Branding-Friendly Buildsg",
+      question: "Branding-Friendly Builds",
       answer: "Every site I build reflects the brand’s essence — visually cohesive, technically sound, and easy to manage.",
       some_features: [
         "Typography & color systems",
