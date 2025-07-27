@@ -12,7 +12,7 @@ export default function RootLayout({
         {/* ✅ Google site verification */}
         <meta
           name="google-site-verification"
-          content="CW6OL3OSwJV8YD97QoU1j9MKRDXD84trevaPPf7C4MkY"
+          content="CW6OL3OSwJV8YD97QoU1j9MKRDXD84trevaPPf7C4Mk"
         />
 
         {/* ✅ Fonts */}
