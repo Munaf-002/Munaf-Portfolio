@@ -1,10 +1,10 @@
 'use client';
 import React from 'react';
 import Image, { StaticImageData } from 'next/image'
-import slider_img_1 from "@/assets/img/services/slider/modalinex-car-website.webp";
-import slider_img_2 from "@/assets/img/services/slider/nalytoo-payment-gateway.webp";
-import slider_img_3 from "@/assets/img/services/slider/travel.webp";
-import slider_img_4 from "@/assets/img/services/slider/woocomerce-website.webp";
+import slider_img_1 from "@/assets/img/services/slider/services-slider-1.jpg";
+import slider_img_2 from "@/assets/img/services/slider/services-slider-2.jpg";
+import slider_img_3 from "@/assets/img/services/slider/services-slider-3.jpg";
+import slider_img_4 from "@/assets/img/services/slider/services-slider-4.jpg";
 import Slider from "react-slick";
 
 interface DataType {
