@@ -7,10 +7,10 @@ import bg_shape from "@/assets/img/offcanvas/bg-shape-3.png";
 import logo_white from "@/assets/img/logo/logo.png";
 import logo_black from "@/assets/img/logo/logo-black.png";
 
-import offcanvas_1 from "@/assets/img/offcanvas/offcanvas-1.png";
-import offcanvas_2 from "@/assets/img/offcanvas/offcanvas-2.webp";
-import offcanvas_3 from "@/assets/img/offcanvas/offcanvas-3.png";
-import offcanvas_4 from "@/assets/img/offcanvas/offcanvas-4.jpeg"; 
+import offcanvas_1 from "@/assets/img/offcanvas/wp.png";
+import offcanvas_2 from "@/assets/img/offcanvas/shopify.png";
+import offcanvas_3 from "@/assets/img/offcanvas/javascript.png";
+import offcanvas_4 from "@/assets/img/offcanvas/html.png"; 
 
 const Offcanvas2 = ({ showCanvas, setShowCanvas }: any) => {
   return (
