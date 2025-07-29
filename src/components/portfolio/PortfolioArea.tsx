@@ -171,7 +171,9 @@ const PortfolioArea = () => {
             </div>
           </div>
         </div>
-
-      
+      </div>
+    </div>
+  );
+};
 
 export default PortfolioArea;
