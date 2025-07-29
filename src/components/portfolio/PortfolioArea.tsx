@@ -126,12 +126,14 @@ const PortfolioArea = () => {
       <p>Latest Projects</p>
     </div>
     <div className="container">
-      {allPortfolioProjects.map((item, index) => (
-        <div className="row grid gx-90" key={item.id}>
-          {index % 2 === 0 ? (
-            <>
-              <div className="col-xl-6 grid-item">
-                <div className="tp-portfolio-item mb-70">
+      <div className="row grid gx-90">
+        {/* Left column */}
+        <div className="col-xl-6 grid-item">
+          <div className="tp-portfolio-item-wrapper">
+            {allPortfolioProjects
+              .filter((_, index) => index % 2 === 0)
+              .map((item, index) => (
+                <div key={item.id} className="tp-portfolio-item mb-70">
                   <Link href={item.url} target="_blank">
                     <div className={`tp-portfolio-thumb img-${item.id} w-img fix`}>
                       <div
@@ -150,7 +152,7 @@ const PortfolioArea = () => {
                     <div className="tp-portfolio-content">
                       <h3 className="tp-portfolio-title">{item.title}</h3>
                       <div className="tp-portfolio-meta d-flex align-items-center">
-                        <span className="tp-portfolio-meta-count">0{index + 1}</span>
+                        <span className="tp-portfolio-meta-count">0{index * 2 + 1}</span>
                         <span className="tp-portfolio-meta-arrow">
                           <svg width="42" height="13" viewBox="0 0 42 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M35.4889 1L41 6.33338L35.4889 11.6667" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -165,52 +167,54 @@ const PortfolioArea = () => {
                     </div>
                   </Link>
                 </div>
-              </div>
-              <div className="col-xl-6 grid-item" />
-            </>
-          ) : (
-            <>
-              <div className="col-xl-6 grid-item" />
-              <div className="col-xl-6 grid-item">
-                <div className="tp-portfolio-item mb-70">
-                  <Link href={item.url} target="_blank">
-                    <div className={`tp-portfolio-thumb img-${item.id} w-img fix`}>
-                      <div
-                        className="tp-portfolio-thumb-img include-bg d-none"
-                        style={{ backgroundImage: `url(${item.bg_img})` }}
-                      ></div>
-                      <div className="tp-portfolio-thumb-img">
-                        <Image
-                          data-speed="0.85"
-                          style={{ height: 'auto' }}
-                          src={item.img}
-                          alt={`${item.title} - ${item.category}`}
-                        />
-                      </div>
-                    </div>
-                    <div className="tp-portfolio-content">
-                      <h3 className="tp-portfolio-title">{item.title}</h3>
-                      <div className="tp-portfolio-meta d-flex align-items-center">
-                        <span className="tp-portfolio-meta-count">0{index + 1}</span>
-                        <span className="tp-portfolio-meta-arrow">
-                          <svg width="42" height="13" viewBox="0 0 42 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M35.4889 1L41 6.33338L35.4889 11.6667" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                            <path d="M0.999998 6.33179H41" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                          </svg>
-                        </span>
-                        <div className="tp-portfolio-meta-hover">
-                          <span>{item.category}</span>
-                          <span className="tp-portfolio-meta-link">View Project</span>
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-              </div>
-            </>
-          )}
+              ))}
+          </div>
         </div>
-      ))}
+
+        {/* Right column */}
+        <div className="col-xl-6 grid-item">
+          <div className="tp-portfolio-item-wrapper">
+            {allPortfolioProjects
+              .filter((_, index) => index % 2 === 1)
+              .map((item, index) => (
+                <div key={item.id} className="tp-portfolio-item mb-70">
+                  <Link href={item.url} target="_blank">
+                    <div className={`tp-portfolio-thumb img-${item.id} w-img fix`}>
+                      <div
+                        className="tp-portfolio-thumb-img include-bg d-none"
+                        style={{ backgroundImage: `url(${item.bg_img})` }}
+                      ></div>
+                      <div className="tp-portfolio-thumb-img">
+                        <Image
+                          data-speed="0.85"
+                          style={{ height: 'auto' }}
+                          src={item.img}
+                          alt={`${item.title} - ${item.category}`}
+                        />
+                      </div>
+                    </div>
+                    <div className="tp-portfolio-content">
+                      <h3 className="tp-portfolio-title">{item.title}</h3>
+                      <div className="tp-portfolio-meta d-flex align-items-center">
+                        <span className="tp-portfolio-meta-count">0{index * 2 + 2}</span>
+                        <span className="tp-portfolio-meta-arrow">
+                          <svg width="42" height="13" viewBox="0 0 42 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M35.4889 1L41 6.33338L35.4889 11.6667" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                            <path d="M0.999998 6.33179H41" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                          </svg>
+                        </span>
+                        <div className="tp-portfolio-meta-hover">
+                          <span>{item.category}</span>
+                          <span className="tp-portfolio-meta-link">View Project</span>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+              ))}
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 );
