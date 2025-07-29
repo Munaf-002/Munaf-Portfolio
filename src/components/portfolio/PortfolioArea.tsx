@@ -1,187 +1,192 @@
 'use client';
 import Link from 'next/link';
-import Image from 'next/image';
-import React from 'react';
+import React, { useEffect } from 'react';
+import Image, { StaticImageData } from 'next/image';
+import { gsap } from 'gsap';
 
-import portfolio_img_1 from "@/assets/img/portfolio/modalinex.png";
-import portfolio_img_2 from "@/assets/img/portfolio/afilcorp.png";
-import portfolio_img_3 from "@/assets/img/portfolio/christopher.png";
-
+// Images
 import project_img_1 from '@/assets/img/portfolio/port-inner-up-1.jpg';
 import project_img_2 from '@/assets/img/portfolio/port-inner-up-4.jpg';
-import project_img_3_2 from '@/assets/img/portfolio/port-inner-up-5.jpg';
-
+import project_img_3 from '@/assets/img/portfolio/port-inner-up-5.jpg';
 import project_img_4 from '@/assets/img/portfolio/port-inner-up-2.jpg';
 import project_img_5 from '@/assets/img/portfolio/port-inner-up-3.jpg';
 import project_img_6 from '@/assets/img/portfolio/portfolio-2.jpg';
 
-import RitghtArrowIconPortfolio from '@/svg/home/PortfolioIcons/RitghtArrowIconPortfolio';
+interface DataType {
+  blog_data_1: {
+    id: number;
+    img: StaticImageData;
+    bg_img: string;
+    title: string;
+    category: string;
+  }[];
+  blog_data_2: {
+    id: number;
+    img: StaticImageData;
+    bg_img: string;
+    title: string;
+    category: string;
+  }[];
+}
 
-const allPortfolioProjects = [
-  {
-    id: 1,
-    img: portfolio_img_1,
-    bg_img: '/assets/img/portfolio/modalinex.png',
-    title: 'Modalinex',
-    category: 'Web Dev',
-    url: 'https://modalinex.com/',
-  },
-  {
-    id: 2,
-    img: portfolio_img_3,
-    bg_img: '/assets/img/portfolio/afilcorp.png',
-    title: 'Christopher Leigh Dodson',
-    category: 'Web Dev',
-    url: 'https://christopherleighdodson.com/',
-  },
-  {
-    id: 3,
-    img: portfolio_img_2,
-    bg_img: '/assets/img/portfolio/modalinex.png',
-    title: 'Afilcorp',
-    category: 'Web Development',
-    url: '#',
-  },
-  {
-    id: 4,
-    img: project_img_1,
-    bg_img: '/assets/img/portfolio/modalinex.png',
-    title: 'Project One',
-    category: 'Branding',
-    url: '#',
-  },
-  {
-    id: 5,
-    img: project_img_2,
-    bg_img: '/assets/img/portfolio/port-inner-up-4.jpg',
-    title: 'Project Two',
-    category: 'Branding',
-    url: '#',
-  },
-  {
-    id: 6,
-    img: project_img_3_2,
-    bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
-    title: 'Project Three',
-    category: 'Branding',
-    url: '#',
-  },
-  {
-    id: 7,
-    img: project_img_4,
-    bg_img: '/assets/img/portfolio/port-inner-up-2.jpg',
-    title: 'Project Four',
-    category: 'Branding',
-    url: '#',
-  },
-  {
-    id: 8,
-    img: project_img_5,
-    bg_img: '/assets/img/portfolio/port-inner-up-3.jpg',
-    title: 'Project Five',
-    category: 'Branding',
-    url: '#',
-  },
-  {
-    id: 9,
-    img: project_img_6,
-    bg_img: '/assets/img/portfolio/portfolio-2.jpg',
-    title: 'Project Six',
-    category: 'Branding',
-    url: '#',
-  },
-];
+const project_content: DataType = {
+  blog_data_1: [
+    {
+      id: 1,
+      img: project_img_1,
+      bg_img: '/assets/img/portfolio/modalinex.png',
+      title: 'Afilcorp',
+      category: 'Web Development',
+    },
+    {
+      id: 2,
+      img: project_img_2,
+      bg_img: '/assets/img/portfolio/port-inner-up-4.jpg',
+      title: 'Crisis Cleanup',
+      category: 'Branding',
+    },
+    {
+      id: 3,
+      img: project_img_3,
+      bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
+      title: 'Space Needle',
+      category: 'Branding',
+    },
+  ],
+  blog_data_2: [
+    {
+      id: 4,
+      img: project_img_4,
+      bg_img: '/assets/img/portfolio/port-inner-up-2.jpg',
+      title: 'Space Needle',
+      category: 'Branding',
+    },
+    {
+      id: 5,
+      img: project_img_5,
+      bg_img: '/assets/img/portfolio/port-inner-up-3.jpg',
+      title: 'Crisis Cleanup',
+      category: 'Branding',
+    },
+    {
+      id: 6,
+      img: project_img_6,
+      bg_img: '/assets/img/portfolio/portfolio-2.jpg',
+      title: 'Space Needle',
+      category: 'Branding',
+    },
+  ],
+};
+
+const { blog_data_1, blog_data_2 } = project_content;
 
 const PortfolioArea = () => {
-  // Split projects roughly in half for two columns
-  const half = Math.ceil(allPortfolioProjects.length / 2);
-  const leftProjects = allPortfolioProjects.slice(0, half);
-  const rightProjects = allPortfolioProjects.slice(half);
+  useEffect(() => {
+    // GSAP text scroll animation
+    gsap.set('.tp-portfolio-bg-text', { x: '25%' });
+
+    gsap.timeline({
+      scrollTrigger: {
+        trigger: '.tp-portfolio-bg-text-animation',
+        start: '-500 0%',
+        end: 'bottom -10%',
+        scrub: true,
+        invalidateOnRefresh: true,
+      },
+    }).to('.tp-portfolio-bg-text', { x: '-80%' });
+
+    gsap.timeline({
+      scrollTrigger: {
+        trigger: '.portfolio-list-scroll-text-animation',
+        start: '-500 0%',
+        end: 'bottom -10%',
+        scrub: true,
+        invalidateOnRefresh: true,
+      },
+    }).to('.portfolio-list-scroll-text', { x: '-80%' });
+  }, []);
 
   return (
-    <section className="tp-portfolio-area tp-btn-trigger-2 p-relative z-index-1 pt-280 pb-40 fix">
-      <div className="tp-portfolio-top-text tp-portfolio-bg-text d-flex align-items-center tp-portfolio-bg-text-animation">
-        <p>Latest projects</p>
-        <p>Latest projects</p>
+    <div className="porfolio-inner__thumb-wrapper tp-portfolio-effect portfolio-list-scroll-text-animation p-relative fix black-bg-3 pt-80 pb-80" data-scrub="0.0001">
+      {/* Scrolling text */}
+      <div className="portfolio-list-scroll-text pb-80 d-flex align-items-center tp-portfolio-bg-text tp-portfolio-bg-text-animation">
+        <p>Latest Project</p>
+        <p>Latest Project</p>
       </div>
+
       <div className="container">
-        <div className="row">
-          {/* Left Column */}
-          <div className="col-xl-6 col-lg-6">
-            <div className="tp-portfolio-wrapper pr-30 pt-55">
-              <div className="tp-section-title-wrapper mb-60">
-                <div className="tp-section-title-inner tp_title_anim p-relative">
-                  <span className="tp-section-subtitle tp-portfolio-subtitle">Project</span>
-                  <h3 className="tp-section-title tp_title_anim">Latest projects</h3>
-                </div>
-              </div>
-
-              <div className="tp-portfolio-item-wrapper">
-                {leftProjects.map((item, i) => (
-                  <div key={item.id} className="tp-portfolio-item mb-70">
-                    <Link href={item.url} target="_blank" rel="noopener noreferrer">
-                      <div className={`tp-portfolio-thumb img-${item.id} w-img fix`}>
-                        <div
-                          className="tp-portfolio-thumb-img include-bg d-none"
-                          style={{ backgroundImage: `url(${item.bg_img})`, height: 'auto' }}
-                        ></div>
-                        <div className="tp-portfolio-thumb-img">
-                          <Image
-                            data-speed="0.85"
-                            style={{ height: 'auto' }}
-                            src={item.img}
-                            alt={`${item.title} project image`}
-                          />
-                        </div>
-                      </div>
-                      <div className="tp-portfolio-content">
-                        <h3 className="tp-portfolio-title">{item.title}</h3>
-                        <div className="tp-portfolio-meta d-flex align-items-center">
-                          <span className="tp-portfolio-meta-count">0{i + 1}</span>
-                          <span className="tp-portfolio-meta-arrow">
-                            <RitghtArrowIconPortfolio />
-                          </span>
-                          <div className="tp-portfolio-meta-hover">
-                            <span>{item.category}</span>
-                            <span className="tp-portfolio-meta-link">View Project</span>
-                          </div>
-                        </div>
-                      </div>
-                    </Link>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {/* Right Column */}
-          <div className="col-xl-6 col-lg-6">
-            <div className="tp-portfolio-item-wrapper pl-50">
-              {rightProjects.map((item, i) => (
-                <div key={item.id} className="tp-portfolio-item mb-70">
-                  <Link href={item.url} target="_blank" rel="noopener noreferrer">
+        <div className="row grid gx-90">
+          {/* Left column */}
+          <div className="col-xl-6 grid-item">
+            <div className="tp-portfolio-item-wrapper">
+              {blog_data_1.map((item, index) => (
+                <div key={index} className="tp-portfolio-item mb-70">
+                  <Link href="/portfolio-details">
                     <div className={`tp-portfolio-thumb img-${item.id} w-img fix`}>
                       <div
                         className="tp-portfolio-thumb-img include-bg d-none"
-                        style={{ backgroundImage: `url(${item.bg_img})`, height: 'auto' }}
+                        style={{ backgroundImage: `url(${item.bg_img})` }}
                       ></div>
                       <div className="tp-portfolio-thumb-img">
                         <Image
+                          src={item.img}
+                          alt={`${item.title} - ${item.category}`}
                           data-speed="0.85"
                           style={{ height: 'auto' }}
-                          src={item.img}
-                          alt={`${item.title} project image`}
                         />
                       </div>
                     </div>
                     <div className="tp-portfolio-content">
                       <h3 className="tp-portfolio-title">{item.title}</h3>
                       <div className="tp-portfolio-meta d-flex align-items-center">
-                        <span className="tp-portfolio-meta-count">
-                          0{leftProjects.length + i + 1}
-                        </span>
+                        <span className="tp-portfolio-meta-count">0{index + 1}</span>
                         <span className="tp-portfolio-meta-arrow">
-                          <RitghtArrowIconPortfolio />
+                          <svg width="42" height="13" viewBox="0 0 42 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M35.4889 1L41 6.33338L35.4889 11.6667" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                            <path d="M0.999998 6.33179H41" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                          </svg>
+                        </span>
+                        <div className="tp-portfolio-meta-hover">
+                          <span>{item.category}</span>
+                          <span className="tp-portfolio-meta-link">View Project</span>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Right column */}
+          <div className="col-xl-6 grid-item">
+            <div className="tp-portfolio-item-wrapper">
+              {blog_data_2.map((item, index) => (
+                <div key={index} className="tp-portfolio-item mb-70">
+                  <Link href="/portfolio-details">
+                    <div className={`tp-portfolio-thumb img-${item.id} w-img fix`}>
+                      <div
+                        className="tp-portfolio-thumb-img include-bg d-none"
+                        style={{ backgroundImage: `url(${item.bg_img})` }}
+                      ></div>
+                      <div className="tp-portfolio-thumb-img">
+                        <Image
+                          src={item.img}
+                          alt={`${item.title} - ${item.category}`}
+                          data-speed="0.85"
+                          style={{ height: 'auto' }}
+                        />
+                      </div>
+                    </div>
+                    <div className="tp-portfolio-content">
+                      <h3 className="tp-portfolio-title">{item.title}</h3>
+                      <div className="tp-portfolio-meta d-flex align-items-center">
+                        <span className="tp-portfolio-meta-count">0{index + 1}</span>
+                        <span className="tp-portfolio-meta-arrow">
+                          <svg width="42" height="13" viewBox="0 0 42 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M35.4889 1L41 6.33338L35.4889 11.6667" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                            <path d="M0.999998 6.33179H41" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                          </svg>
                         </span>
                         <div className="tp-portfolio-meta-hover">
                           <span>{item.category}</span>
@@ -196,7 +201,7 @@ const PortfolioArea = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
