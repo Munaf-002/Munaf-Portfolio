@@ -3,7 +3,7 @@ import React from 'react';
 import HeaderFour from '@/layouts/headers/HeaderFour';
 import PortfolioSlider from './PortfolioSlider';
 import PortfolioArea from './PortfolioArea';
-import BrandAreaAbout from '../about/BrandAreaAbout';
+// import BrandAreaAbout from '../about/BrandAreaAbout';
 import FooterOne from '@/layouts/footers/FooterOne';
 
 
@@ -16,7 +16,7 @@ const Portfolio = () => {
           <main>
             <PortfolioSlider />
             <PortfolioArea />
-            <BrandAreaAbout />
+            {/* <BrandAreaAbout /> */}
           </main>
           <FooterOne style={true} />
         </div>

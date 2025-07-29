@@ -13,7 +13,7 @@ import project_img_2 from '@/assets/img/portfolio/preet.png';
 import project_img_3_2 from '@/assets/img/portfolio/playtme.png';
 import project_img_4 from '@/assets/img/portfolio/nopressure.png';
 import project_img_5 from '@/assets/img/portfolio/port-inner-7.jpg';
-import project_img_6 from '@/assets/img/portfolio/port-inner-3.jpg';
+import project_img_6 from '@/assets/img/portfolio/port-inner-up-3.jpg';
 
 const allPortfolioProjects = [
   {
@@ -83,7 +83,7 @@ const allPortfolioProjects = [
   {
     id: 9,
     img: project_img_6,
-    bg_img: '/assets/img/portfolio/port-inner-3.jpg',
+    bg_img: '/assets/img/portfolio/port-inner-up-3.jpg',
     title: 'RentinSaigon',
     category: 'Listing Website',
     url: 'https://staging40.neotechfusion.com/',
