@@ -120,18 +120,18 @@ const PortfolioArea = () => {
   const columnTwo = allPortfolioProjects.slice(half);
 
   return (
-    <div className="porfolio-inner__thumb-wrapper tp-portfolio-effect portfolio-list-scroll-text-animation p-relative fix black-bg-3 pt-80 pb-50" data-scrub="0.0001">
-      <div className="portfolio-list-scroll-text pb-80 d-flex align-items-center">
-        <p>Latest Project</p>
-        <p>Latest Project</p>
-      </div>
-      <div className="container">
-        <div className="row grid gx-90">
-          {/* Left column */}
-          <div className="col-xl-6 grid-item">
-            <div className="tp-portfolio-item-wrapper">
-              {columnOne.map((item, index) => (
-                <div key={item.id} className="tp-portfolio-item mb-70">
+  <div className="porfolio-inner__thumb-wrapper tp-portfolio-effect portfolio-list-scroll-text-animation p-relative fix black-bg-3 pt-80 pb-50" data-scrub="0.0001">
+    <div className="portfolio-list-scroll-text pb-80 d-flex align-items-center">
+      <p>Latest Projects</p>
+      <p>Latest Projects</p>
+    </div>
+    <div className="container">
+      {allPortfolioProjects.map((item, index) => (
+        <div className="row grid gx-90" key={item.id}>
+          {index % 2 === 0 ? (
+            <>
+              <div className="col-xl-6 grid-item">
+                <div className="tp-portfolio-item mb-70">
                   <Link href={item.url} target="_blank">
                     <div className={`tp-portfolio-thumb img-${item.id} w-img fix`}>
                       <div
@@ -165,15 +165,14 @@ const PortfolioArea = () => {
                     </div>
                   </Link>
                 </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Right column */}
-          <div className="col-xl-6 grid-item">
-            <div className="tp-portfolio-item-wrapper">
-              {columnTwo.map((item, index) => (
-                <div key={item.id} className="tp-portfolio-item mb-70">
+              </div>
+              <div className="col-xl-6 grid-item" />
+            </>
+          ) : (
+            <>
+              <div className="col-xl-6 grid-item" />
+              <div className="col-xl-6 grid-item">
+                <div className="tp-portfolio-item mb-70">
                   <Link href={item.url} target="_blank">
                     <div className={`tp-portfolio-thumb img-${item.id} w-img fix`}>
                       <div
@@ -192,7 +191,7 @@ const PortfolioArea = () => {
                     <div className="tp-portfolio-content">
                       <h3 className="tp-portfolio-title">{item.title}</h3>
                       <div className="tp-portfolio-meta d-flex align-items-center">
-                        <span className="tp-portfolio-meta-count">0{half + index + 1}</span>
+                        <span className="tp-portfolio-meta-count">0{index + 1}</span>
                         <span className="tp-portfolio-meta-arrow">
                           <svg width="42" height="13" viewBox="0 0 42 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M35.4889 1L41 6.33338L35.4889 11.6667" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -207,13 +206,14 @@ const PortfolioArea = () => {
                     </div>
                   </Link>
                 </div>
-              ))}
-            </div>
-          </div>
+              </div>
+            </>
+          )}
         </div>
-      </div>
+      ))}
     </div>
-  );
-};
+  </div>
+);
+}
 
 export default PortfolioArea;
