@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import Slider from 'react-slick';
 import quote from "@/assets/img/testimonial/quote.svg";
-import avatarGeneric from "@/assets/img/users/avatar-generic.png";
+import avatarGeneric from "@/assets/img/testimonial/avatar-generic.png";
 import StartIcon from '@/svg/icons/StartIcon';
 import { gsap } from 'gsap';
 
