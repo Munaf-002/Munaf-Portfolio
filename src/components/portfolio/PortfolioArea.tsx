@@ -8,12 +8,12 @@ import { gsap } from 'gsap';
 import portfolio_img_1 from '@/assets/img/portfolio/modalinex.png';
 import portfolio_img_2 from '@/assets/img/portfolio/afilcorp.png';
 import portfolio_img_3 from '@/assets/img/portfolio/christopher.png';
-import project_img_1 from '@/assets/img/portfolio/port-inner-up-1.jpg';
-import project_img_2 from '@/assets/img/portfolio/port-inner-up-4.jpg';
-import project_img_3_2 from '@/assets/img/portfolio/port-inner-up-5.jpg';
-import project_img_4 from '@/assets/img/portfolio/port-inner-up-2.jpg';
-import project_img_5 from '@/assets/img/portfolio/port-inner-up-3.jpg';
-import project_img_6 from '@/assets/img/portfolio/portfolio-2.jpg';
+import project_img_1 from '@/assets/img/portfolio/nalytoo.png';
+import project_img_2 from '@/assets/img/portfolio/preet.png';
+import project_img_3_2 from '@/assets/img/portfolio/playtme.png';
+import project_img_4 from '@/assets/img/portfolio/nopressure.png';
+import project_img_5 from '@/assets/img/portfolio/port-inner-7.jpg';
+import project_img_6 from '@/assets/img/portfolio/port-inner-3.jpg';
 
 const allPortfolioProjects = [
   {
@@ -21,7 +21,7 @@ const allPortfolioProjects = [
     img: portfolio_img_1,
     bg_img: '/assets/img/portfolio/modalinex.png',
     title: 'Modalinex',
-    category: 'Web Dev',
+    category: 'Acf Development',
     url: 'https://modalinex.com/',
   },
   {
@@ -29,7 +29,7 @@ const allPortfolioProjects = [
     img: portfolio_img_3,
     bg_img: '/assets/img/portfolio/afilcorp.png',
     title: 'Christopher Leigh Dodson',
-    category: 'Web Dev',
+    category: 'Web Development',
     url: 'https://christopherleighdodson.com/',
   },
   {
@@ -43,50 +43,50 @@ const allPortfolioProjects = [
   {
     id: 4,
     img: project_img_1,
-    bg_img: '/assets/img/portfolio/modalinex.png',
-    title: 'Project One',
-    category: 'Branding',
-    url: '#',
+    bg_img: '/assets/img/portfolio/nalytoo.png',
+    title: 'Nalytoo',
+    category: 'Figma to WordPress',
+    url: 'https://nalytoo.com/',
   },
   {
     id: 5,
     img: project_img_2,
-    bg_img: '/assets/img/portfolio/port-inner-up-4.jpg',
-    title: 'Project Two',
-    category: 'Branding',
-    url: '#',
+    bg_img: '/assets/img/portfolio/preet.png',
+    title: 'Virsa by Mrs Preet',
+    category: 'Ecommerce',
+    url: 'https://staging15.neotechfusion.com/',
   },
   {
     id: 6,
     img: project_img_3_2,
-    bg_img: '/assets/img/portfolio/port-inner-up-5.jpg',
-    title: 'Project Three',
-    category: 'Branding',
-    url: '#',
+    bg_img: '/assets/img/portfolio/nopressure.png',
+    title: 'No Pressure Construction',
+    category: 'Web Design',
+    url: 'https://staging57.ibaxs.com/',
   },
   {
     id: 7,
     img: project_img_4,
-    bg_img: '/assets/img/portfolio/port-inner-up-2.jpg',
-    title: 'Project Four',
-    category: 'Branding',
-    url: '#',
+    bg_img: '/assets/img/portfolio/playtme.png',
+    title: 'Playtime Global',
+    category: 'Web Design',
+    url: 'https://playtime.global/',
   },
   {
     id: 8,
     img: project_img_5,
-    bg_img: '/assets/img/portfolio/port-inner-up-3.jpg',
-    title: 'Project Five',
-    category: 'Branding',
-    url: '#',
+    bg_img: '/assets/img/portfolio/port-inner-7.jpg',
+    title: 'Cloudnine',
+    category: 'Web Design',
+    url: 'https://cloud9concierge.com/',
   },
   {
     id: 9,
     img: project_img_6,
-    bg_img: '/assets/img/portfolio/portfolio-2.jpg',
-    title: 'Project Six',
-    category: 'Branding',
-    url: '#',
+    bg_img: '/assets/img/portfolio/port-inner-3.jpg',
+    title: 'RentinSaigon',
+    category: 'Listing Website',
+    url: 'https://staging40.neotechfusion.com/',
   },
 ];
 
