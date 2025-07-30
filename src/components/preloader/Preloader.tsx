@@ -8,7 +8,7 @@ const Preloader = () => {
         <div id="loading-center-absolute">
           <div className="preloader__content text-center">
             <div className="preloader__top-text d-flex align-items-center justify-content-between">
-              <p className="preloader__loading text-start">Loading</p>
+              <p className="preloader__loading text-start">Loading...</p>
               <h2 id="tp-loading-number" className="text-end"></h2>
             </div>
             <div id="tp-loading-bar" className="preloader__bar">
