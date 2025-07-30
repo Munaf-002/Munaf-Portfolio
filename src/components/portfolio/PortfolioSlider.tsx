@@ -22,9 +22,9 @@ const slider_images = [
 ];
 
 const setting = {
-  speed: 7000,
+  speed: 6000,
   autoplay: true,
-  autoplaySpeed: 0,
+  autoplaySpeed: 1,
   cssEase: 'linear',
   slidesToShow: 3,
   slidesToScroll: 1,
@@ -37,28 +37,24 @@ const setting = {
       breakpoint: 1200,
       settings: {
         slidesToShow: 1,
-        initialSlide: 1,
       }
     },
     {
       breakpoint: 992,
       settings: {
         slidesToShow: 1,
-        initialSlide: 1,
       }
     },
     {
       breakpoint: 768,
       settings: {
         slidesToShow: 1,
-        initialSlide: 1,
       }
     },
     {
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
-        initialSlide: 1,
       }
     }
   ]
@@ -66,12 +62,27 @@ const setting = {
 
 const PortfolioSlider = () => {
   return (
-    <div className="porfolio-inner__slider-area porfolio-inner__ptb black-bg-3 p-relative fix">
+    <div
+      className="porfolio-inner__slider-area porfolio-inner__ptb black-bg-3 p-relative fix"
+      style={{
+        paddingBottom: '80px',
+        overflow: 'hidden',
+        position: 'relative',
+        zIndex: 1,
+      }}
+    >
       <div className="container-fluid">
         <div className="row">
           <div className="col-xl-12">
             <div className="porfolio-inner__overlay">
-              <div className="porfolio-inner__text-1">
+              <div
+                className="porfolio-inner__text-1"
+                style={{
+                  zIndex: 10,
+                  position: 'relative',
+                  paddingBottom: '2rem',
+                }}
+              >
                 <h4 className="porfolio-inner__slider-title tp_title_anim">
                   Projects That Delivered <br /> Design & Dev.
                 </h4>
@@ -79,14 +90,16 @@ const PortfolioSlider = () => {
               <Slider {...setting} className="porfolio-inner__slider-active">
                 {slider_images.map((item, index) => (
                   <div key={index} className="porfolio-inner__thumb">
-                    <Image
-                      src={item.src}
-                      alt={item.alt}
-                      style={{ height: 'auto' }}
-                      placeholder="blur"
-                      quality={85}
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    />
+                    <div style={{ height: '400px', overflow: 'hidden', position: 'relative' }}>
+                      <Image
+                        src={item.src}
+                        alt={item.alt}
+                        fill
+                        style={{ objectFit: 'cover' }}
+                        quality={85}
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      />
+                    </div>
                   </div>
                 ))}
               </Slider>
