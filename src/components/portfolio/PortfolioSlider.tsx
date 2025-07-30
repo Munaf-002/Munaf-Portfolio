@@ -9,7 +9,7 @@ import slider_img_2 from "@/assets/img/portfolio/elementor-wordpress2.jpg";
 import slider_img_3 from "@/assets/img/portfolio/elementor-wordpress3.jpg";
 import slider_img_4 from "@/assets/img/portfolio/elementor-wordpress4.jpg";
 
-// Image data with SEO-friendly alt text
+// Image data
 const slider_images = [
   { src: slider_img_1, alt: "Elementor WordPress Project - Homepage Design" },
   { src: slider_img_2, alt: "WordPress UI - Service Section Layout" },
@@ -65,48 +65,44 @@ const PortfolioSlider = () => {
     <div
       className="porfolio-inner__slider-area porfolio-inner__ptb black-bg-3 p-relative fix"
       style={{
-        paddingBottom: '80px',
-        overflow: 'hidden',
         position: 'relative',
-        zIndex: 1,
+        overflow: 'hidden',
+        paddingTop: '120px',
+        paddingBottom: '80px',
       }}
     >
-      <div className="container-fluid">
-        <div className="row">
-          <div className="col-xl-12">
-            <div className="porfolio-inner__overlay">
-              <div
-                className="porfolio-inner__text-1"
-                style={{
-                  zIndex: 10,
-                  position: 'relative',
-                  paddingBottom: '2rem',
-                }}
-              >
-                <h4 className="porfolio-inner__slider-title tp_title_anim">
-                  Projects That Delivered <br /> Design & Dev.
-                </h4>
-              </div>
-              <Slider {...setting} className="porfolio-inner__slider-active">
-                {slider_images.map((item, index) => (
-                  <div key={index} className="porfolio-inner__thumb">
-                    <div style={{ height: '400px', overflow: 'hidden', position: 'relative' }}>
-                      <Image
-                        src={item.src}
-                        alt={item.alt}
-                        fill
-                        style={{ objectFit: 'cover' }}
-                        quality={85}
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      />
-                    </div>
-                  </div>
-                ))}
-              </Slider>
-            </div>
-          </div>
-        </div>
+      {/* Text over slider */}
+      <div
+        className="porfolio-inner__text-1"
+        style={{
+          position: 'absolute',
+          top: '30px',
+          left: '50%',
+          transform: 'translateX(-50%)',
+          zIndex: 10,
+          textAlign: 'center',
+          color: '#fff',
+        }}
+      >
+        <h4 className="porfolio-inner__slider-title tp_title_anim" style={{ fontSize: '42px' }}>
+          Projects That Delivered <br /> Design & Dev.
+        </h4>
       </div>
+
+      {/* Slider */}
+      <Slider {...setting} className="porfolio-inner__slider-active">
+        {slider_images.map((item, index) => (
+          <div key={index} className="porfolio-inner__thumb">
+            <Image
+              src={item.src}
+              alt={item.alt}
+              quality={85}
+              style={{ width: '100%', height: 'auto' }}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
+          </div>
+        ))}
+      </Slider>
     </div>
   );
 };
