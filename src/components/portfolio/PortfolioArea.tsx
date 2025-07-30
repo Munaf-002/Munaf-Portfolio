@@ -14,6 +14,7 @@ import project_img_3_2 from '@/assets/img/portfolio/playtme.png';
 import project_img_4 from '@/assets/img/portfolio/nopressure.png';
 import project_img_5 from '@/assets/img/portfolio/port-inner-7.jpg';
 import project_img_6 from '@/assets/img/portfolio/port-inner-up-3.jpg';
+import project_img_7 from '@/assets/img/portfolio/port-inner-8.jpg';
 
 const allPortfolioProjects = [
   {
@@ -88,6 +89,14 @@ const allPortfolioProjects = [
     title: 'RentinSaigon',
     category: 'Listing Website',
     url: 'https://staging40.neotechfusion.com/',
+  },
+  {
+    id: 10,
+    img: project_img_7,
+    bg_img: '/assets/img/portfolio/port-inner-8.jpg',
+    title: 'Oualo Store',
+    category: 'Ecommerce Store',
+    url: 'https://oualostore.com/',
   },
 ];
 
