@@ -81,7 +81,7 @@ const PortfolioSlider = () => {
                       <Image
                         src={item.src}
                         alt={item.alt}
-                        style={{ height: '400px', width: 'auto' }}
+                        style={{ height: '400px', width: '100%' }}
                       />
                     </div>
                   ))}
