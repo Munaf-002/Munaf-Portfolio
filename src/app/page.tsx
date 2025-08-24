@@ -4,7 +4,7 @@ import React from 'react';
 
 
 export const metadata = {
-  title: "Asipified By AK",
+  title: "Syed Munaf Ahmed",
 };
 
 const MainHome = () => {
