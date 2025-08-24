@@ -27,7 +27,7 @@ const hero_content: DataType = {
     "Web developer",
   ],
   sub_title: "Hello There!",
-  title_1: "I am Asif Khan",
+  title_1: "I am Syed Munaf Ahmed",
   words: ["Web", "WP", "CMS"],
   title_2: "Developer",
   sm_info: <>The combination of my passion for design, code & <br /> interaction web design world.</>,
